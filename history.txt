@@ -1,0 +1,241 @@
+
+8907296093089@RDS1 MINGW64 ~ (main)
+$ cd desktop
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ git clone git@github.com:Moses5232/student_sub_system.git
+Cloning into 'student_sub_system'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ cd new_folder
+bash: cd: new_folder: No such file or directory
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ ls -al ~/.ssh
+total 23
+drwxr-xr-x 1 8907296093089 1049089   0 May  4 13:55 ./
+drwxr-xr-x 1 8907296093089 1049089   0 May  5 09:10 ../
+-rw-r--r-- 1 8907296093089 1049089 464 May  5 10:19 id_ed25519
+-rw-r--r-- 1 8907296093089 1049089 101 May  5 10:19 id_ed25519.pub
+-rw-r--r-- 1 8907296093089 1049089 828 May  4 13:55 known_hosts
+-rw-r--r-- 1 8907296093089 1049089  92 May  4 13:28 known_hosts.old
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/8907296093089/.ssh/id_ed25519): newkey
+Enter passphrase for "newkey" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in newkey
+Your public key has been saved in newkey.pub
+The key fingerprint is:
+SHA256:1EtdcjWgnPucqx3URcikvVaOw1auy0FztWmb7OIS22s hamzamp13@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|            .+=+o|
+|         ...o*o..|
+|        . o+o . =|
+|       . . ....B=|
+|        S .. .X=+|
+|           .+++=o|
+|            +=o+ |
+|           o.E+o |
+|           .===. |
++----[SHA256]-----+
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPm/+EQnprJ17fbxkRBJdD8XoXRUJSVBJ4ZiSO1iIQSc hamzamp13@gmail.com
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ git clone git@github.com:Moses5232/student_sub_system.git
+Cloning into 'student_sub_system'...
+Enter passphrase for key '/c/Users/8907296093089/.ssh/id_ed25519':
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ git clone https://github.com/Moses5232/student_sub_system.git
+Cloning into 'student_sub_system'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 7 (from 1)
+Receiving objects: 100% (9/9), 4.82 KiB | 2.41 MiB/s, done.
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ ls
+'Git Bash.lnk'*        'Visual Studio Code.lnk'*   student_sub_system/
+ History.txt            congrats.PNG               today/
+'Microsoft Edge.lnk'*   desktop.ini                y
+'New folder'/           newkey                     y.pub
+ Practice2026/          newkey.pub
+ TPC-Luka-DC.rdp        ssh.PNG
+
+8907296093089@RDS1 MINGW64 ~/desktop (origin)
+$ cd student_sub_system
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ code .
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ touch index.html
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add .
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ touch about.html
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add .
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ touch history.txt
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git commit -m "Added 3 files"
+[main 616f3a4] Added 3 files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 about.html
+ create mode 100644 index.html
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Moses5232/student_sub_system.git'
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 74 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 325 bytes | 325.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Moses5232/student_sub_system.git
+   55348f1..616f3a4  main -> main
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot2.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot3.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot4.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git commit -m "Added screenshots"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Screenshot.PNG
+        Screenshot2.PNG
+        Screenshot3.PNG
+        Screenshot4.PNG
+        history.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot4.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot3.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot2.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git add Screenshot.png
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ git push origin
+Everything up-to-date
+
+8907296093089@RDS1 MINGW64 ~/desktop/student_sub_system (main)
+$ history
+    1  ssh -T git@github.com
+    2  ssh .\ssh
+    3  cat .\ssh
+    4  cat .\ssh ed25529
+    5  cat .\ssh_ed25529
+    6  cat .\ssh_ed25519
+    7  cat ~.\ssh_ed25519
+    8  cat ~.\ssh ed25519
+    9  cat ~.\ssh -ed25519
+   10  cat --help
+   11  cat ~.\ssh id_ed25519
+   12  cat ~.\id_ed25519
+   13  cat ~/.ssh id_ed25519
+   14  cat ~/.ssh_ed25519
+   15  ~/ssh/id_ed25519.pub
+   16  ~/.ssh/id_ed25519.pub
+   17  ssh -T git@github.com
+   18  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   19  ssh -T git@github.com
+   20  ~/.ssh/id_ed25519.pub
+   21  ls -al ./ssh
+   22  ls -al \.ssh
+   23  ls -al
+   24  ls -al ~/.ssh
+   25  ed25519@openssh.com
+   26  sk-ssh-ed25519@openssh.com
+   27  git clone git@github.com:Moses5232/student_sub_system.git
+   28  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   29  git clone git@github.com:Moses5232/student_sub_system.git
+   30  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   31  ls -al ~/.ssh
+   32  ssh -T git@github.com
+   33  ssh -T git@github.com
+   34  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   35  ~/.ssh/id_ed25519.pub
+   36  ~/.ssh/id_ed25519.pub
+   37  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   38  cat /.ssh
+   39  history
+   40  git clone git@github.com:Moses5232/student_sub_system.git
+   41  cd desktop
+   42  git clone git@github.com:Moses5232/student_sub_system.git
+   43  cd new_folder
+   44  ls -al ~/.ssh
+   45  ssh-keygen -t ed25519 -C "hamzamp13@gmail.com"
+   46  cat ~/.ssh/id_ed25519.pub
+   47  git clone git@github.com:Moses5232/student_sub_system.git
+   48  git clone https://github.com/Moses5232/student_sub_system.git
+   49  ls
+   50  cd student_sub_system
+   51  code .
+   52  touch index.html
+   53  git add .
+   54  touch about.html
+   55  git add .
+   56  touch history.txt
+   57  git commit -m "Added 3 files"
+   58  git push origin master
+   59  git push origin
+   60  git add Screenshot.png
+   61  git add Screenshot2.png
+   62  git add Screenshot3.png
+   63  git add Screenshot4.png
+   64  git commit -m "Added screenshots"
+   65  git add Screenshot4.png
+   66  git add Screenshot3.png
+   67  git add Screenshot2.png
+   68  git add Screenshot.png
+   69  git push origin
+   70  history
